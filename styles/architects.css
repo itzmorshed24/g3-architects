@@ -61,6 +61,7 @@ main > section{
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 /* Banner Related Styles */
 .banner{
@@ -100,7 +101,7 @@ main > section{
     max-width: 530px;
 }
 
-.feature-title{
+.section-title{
     font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
@@ -115,9 +116,29 @@ main > section{
     margin-bottom: 1.5rem;
 }
 
+
+
 /* Responsive Related Styles */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links,
+    .teams{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-top: 1.5rem;
+    }
+}
+
+/* Medium Device Responsive */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-top: 50px;
+        margin-left: 50px;
     }
 }
